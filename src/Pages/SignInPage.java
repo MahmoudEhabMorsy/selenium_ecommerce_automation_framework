@@ -8,7 +8,7 @@ import java.time.Duration;
 
 
 public class SignInPage {
-    private WebDriver driver;
+
     By emailFieldLocator = By.id("ap_email_login");
     By continueButtonLocator = By.id("continue");
     By newToAmazonMessageLocator = By.xpath("//div[@id='intent-confirmation-container']/h1");
