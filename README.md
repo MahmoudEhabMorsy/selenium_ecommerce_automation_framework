@@ -66,7 +66,7 @@ Before running the project, ensure that the following are installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone <[repository-url](https://github.com/MahmoudEhabMorsy/AssetTechnicalTask.git)>
 
 ```
 
