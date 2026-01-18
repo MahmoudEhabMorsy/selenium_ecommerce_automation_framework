@@ -15,20 +15,34 @@ public class CartPage extends BasePage {
         super(driver);
     }
 
-    public void goToBasket(){
+    public void goToBasket() {
         getElement(basketLocator).click();
     }
 
-    public List<String> verifyCartItemsAttributes(){
+    public List<String> verifyCartItemsAttributes() {
         WebElement cartItem = getElement(cartItemLocator);
         String cartPrice = cartItem.getAttribute("data-price");
+        // Ensure price has two decimal places and add "0" if necessary
+        if (cartPrice.contains(".")) {
+            if(cartPrice.split("\\.")[1].length()==2){
+                //do nothing
+            }else{
+                cartPrice=cartPrice+"0";
+            }
+        }else{
+            cartPrice=cartPrice+".00";
+        }
         String cartQuantity = cartItem.getAttribute("data-quantity");
         // Extract numeric value from subtotal text and remove any non-numeric characters
-        String cartSubtotal = getElement(cartSubtotalLocator).getText().replaceAll("[^0-9.]","");
-        // Convert subtotal to integer string
-        cartSubtotal = String.valueOf((int)Double.parseDouble(cartSubtotal));
+        String cartSubtotal = getElement(cartSubtotalLocator).getText().replaceAll("[^0-9.]", "");
+        // Ensure subtotal has two decimal places and add "0" if necessary
+        if(cartSubtotal.split("\\.").length==2){
+            //do nothing
+        }else{
+            cartSubtotal=cartSubtotal+"0";
+        }
         String cartItemName = cartItem.findElement(cartItemNameLocator).getAttribute("textContent");
-        return  List.of(cartItemName,cartPrice,cartQuantity,cartSubtotal);
+        return List.of(cartItemName, cartPrice, cartQuantity, cartSubtotal);
     }
 
 

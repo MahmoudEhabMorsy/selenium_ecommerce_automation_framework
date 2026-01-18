@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","24202","Verify items are added to cart successfully and calculated correctly","Asset Technical Task Suite","2026-01-18","passed","2026-01-18","Scenario2Tests","Scenario Tests","Scenario2Tests","verifyItemsAddedToCartSuccessfully"
+"","5507","verify that user can see 'your lists' page without signing in","Asset Technical Task Suite","2026-01-18","passed","2026-01-18","Scenario3Tests","Scenario Tests","Scenario3Tests","verifyUserCanSeeYourListsWithoutSigningIn"
+"","7063","verify that user cannot see 'your orders' page without signing in","Asset Technical Task Suite","2026-01-18","passed","2026-01-18","Scenario3Tests","Scenario Tests","Scenario3Tests","verifyUserCannotSeeYourOrdersWithoutSigningIn"
+"","6174","verify that user cannot see 'your addresses' page without signing in","Asset Technical Task Suite","2026-01-18","passed","2026-01-18","Scenario3Tests","Scenario Tests","Scenario3Tests","verifyUserCannotSeeYourAddressesWithoutSigningIn"
+"","22750","Verify sign in with empty email","Asset Technical Task Suite","2026-01-18","passed","2026-01-18","Scenario1Tests","Scenario Tests","Scenario1Tests","testSignInWithEmptyEmail"
+"","4246","Verify sign in with valid unregistered email shows appropriate message","Asset Technical Task Suite","2026-01-18","passed","2026-01-18","Scenario1Tests","Scenario Tests","Scenario1Tests","testSignInWithValidUnregisteredEmail"
+"","2883","Verify sign in with invalid email shows appropriate error message","Asset Technical Task Suite","2026-01-18","passed","2026-01-18","Scenario1Tests","Scenario Tests","Scenario1Tests","testSignInWithInvalidEmail"

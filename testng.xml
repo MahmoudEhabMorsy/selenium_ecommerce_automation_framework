@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Asset Technical Task Suite" parallel="false">
+
+    <test name="Scenario Tests">
+        <classes>
+            <class name="Scenario1Tests"/>
+            <class name="Scenario2Tests"/>
+            <class name="Scenario3Tests"/>
+        </classes>
+    </test>
+
+</suite>

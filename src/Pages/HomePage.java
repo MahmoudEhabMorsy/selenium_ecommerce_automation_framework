@@ -6,8 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 public class HomePage extends BasePage {
 
 
-    private final  By accountAndListsLocator = By.id("nav-link-accountList");
-    private final  By signInButtonLocator = By.id("nav-flyout-ya-signin");
+    private final By accountAndListsLocator = By.id("nav-link-accountList");
+    private final By signInButtonLocator = By.id("nav-flyout-ya-signin");
     private final By todayDealsLocator = By.linkText("Today's Deals");
     private final By yourOrdersLocator = By.id("nav_prefetch_yourorders");
     private final By yourAddressLocator = By.id("nav_prefetch_youraddresses");
@@ -33,12 +33,15 @@ public class HomePage extends BasePage {
     public void clickSignInButton() {
         getElement(signInButtonLocator).click();
     }
+
     public void clickYourOrders() {
         getElement(yourOrdersLocator).click();
     }
+
     public void clickYourAddress() {
         getElement(yourAddressLocator).click();
     }
+
     public void clickYourLists() {
         getElement(yourListsLocator).click();
     }

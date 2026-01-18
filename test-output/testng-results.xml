@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-18T20:44:40 EET" name="Asset Technical Task Suite" finished-at="2026-01-18T20:45:59 EET" duration-ms="78989">
+    <groups>
+    </groups>
+    <test started-at="2026-01-18T20:44:40 EET" name="Scenario Tests" finished-at="2026-01-18T20:45:59 EET" duration-ms="78989">
+      <class name="Scenario2Tests">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Scenario2Tests@d9345cd]" started-at="2026-01-18T20:45:13 EET" name="setUpBrowser" finished-at="2026-01-18T20:45:13 EET" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="verifyItemsAddedToCartSuccessfully()[pri:1, instance:Scenario2Tests@d9345cd]" started-at="2026-01-18T20:45:13 EET" name="verifyItemsAddedToCartSuccessfully" description="Verify items are added to cart successfully and calculated correctly" finished-at="2026-01-18T20:45:38 EET" duration-ms="24204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemsAddedToCartSuccessfully -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:Scenario2Tests@d9345cd]" started-at="2026-01-18T20:45:38 EET" name="tearDownBrowser" finished-at="2026-01-18T20:45:38 EET" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+      </class> <!-- Scenario2Tests -->
+      <class name="Scenario1Tests">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:44:40 EET" name="setUpBrowser" finished-at="2026-01-18T20:44:41 EET" duration-ms="941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="testSignInWithValidUnregisteredEmail()[pri:1, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:44:41 EET" name="testSignInWithValidUnregisteredEmail" description="Verify sign in with valid unregistered email shows appropriate message" finished-at="2026-01-18T20:44:45 EET" duration-ms="4258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInWithValidUnregisteredEmail -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:44:45 EET" name="tearDownBrowser" finished-at="2026-01-18T20:44:45 EET" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:44:45 EET" name="setUpBrowser" finished-at="2026-01-18T20:44:46 EET" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="testSignInWithInvalidEmail()[pri:2, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:44:46 EET" name="testSignInWithInvalidEmail" description="Verify sign in with invalid email shows appropriate error message" finished-at="2026-01-18T20:44:49 EET" duration-ms="2884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInWithInvalidEmail -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:44:49 EET" name="tearDownBrowser" finished-at="2026-01-18T20:44:49 EET" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:44:49 EET" name="setUpBrowser" finished-at="2026-01-18T20:44:50 EET" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="testSignInWithEmptyEmail()[pri:3, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:44:50 EET" name="testSignInWithEmptyEmail" description="Verify sign in with empty email" finished-at="2026-01-18T20:45:13 EET" duration-ms="22751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInWithEmptyEmail -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:Scenario1Tests@306e95ec]" started-at="2026-01-18T20:45:13 EET" name="tearDownBrowser" finished-at="2026-01-18T20:45:13 EET" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+      </class> <!-- Scenario1Tests -->
+      <class name="Scenario3Tests">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:38 EET" name="setUpBrowser" finished-at="2026-01-18T20:45:38 EET" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="verifyUserCannotSeeYourOrdersWithoutSigningIn()[pri:1, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:38 EET" name="verifyUserCannotSeeYourOrdersWithoutSigningIn" description="verify that user cannot see &#039;your orders&#039; page without signing in" finished-at="2026-01-18T20:45:45 EET" duration-ms="7063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotSeeYourOrdersWithoutSigningIn -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:45 EET" name="tearDownBrowser" finished-at="2026-01-18T20:45:46 EET" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:46 EET" name="setUpBrowser" finished-at="2026-01-18T20:45:46 EET" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="verifyUserCannotSeeYourAddressesWithoutSigningIn()[pri:2, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:46 EET" name="verifyUserCannotSeeYourAddressesWithoutSigningIn" description="verify that user cannot see &#039;your addresses&#039; page without signing in" finished-at="2026-01-18T20:45:52 EET" duration-ms="6175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotSeeYourAddressesWithoutSigningIn -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:52 EET" name="tearDownBrowser" finished-at="2026-01-18T20:45:53 EET" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:53 EET" name="setUpBrowser" finished-at="2026-01-18T20:45:53 EET" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="verifyUserCanSeeYourListsWithoutSigningIn()[pri:3, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:53 EET" name="verifyUserCanSeeYourListsWithoutSigningIn" description="verify that user can see &#039;your lists&#039; page without signing in" finished-at="2026-01-18T20:45:59 EET" duration-ms="5509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSeeYourListsWithoutSigningIn -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:Scenario3Tests@52b1beb6]" started-at="2026-01-18T20:45:59 EET" name="tearDownBrowser" finished-at="2026-01-18T20:45:59 EET" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+      </class> <!-- Scenario3Tests -->
+    </test> <!-- Scenario Tests -->
+  </suite> <!-- Asset Technical Task Suite -->
+</testng-results>

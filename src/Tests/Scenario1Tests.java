@@ -4,7 +4,8 @@ import org.testng.asserts.SoftAssert;
 public class Scenario1Tests extends BaseTest {
     String validUnregisteredEmail = "unregistered_email_test@gmail.com";
     String invalidEmail = "invalid_email";
-    @Test(priority = 1,description =  "Verify sign in with valid unregistered email shows appropriate message")
+
+    @Test(priority = 1, description = "Verify sign in with valid unregistered email shows appropriate message")
     public void testSignInWithValidUnregisteredEmail() {
         //reinitialize  softAssert for this test to avoid interference from other tests
         softAssert = new SoftAssert();
@@ -17,10 +18,11 @@ public class Scenario1Tests extends BaseTest {
         SignInPage signInPage = new SignInPage(driver);
         signInPage.enterEmail(validUnregisteredEmail);
         signInPage.clickContinueButton();
-        softAssert.assertEquals(signInPage.getIntentConfirmationContainerMessage().trim(),"Looks like you're new to Amazon");
+        softAssert.assertEquals(signInPage.getIntentConfirmationContainerMessage().trim(), "Looks like you're new to Amazon");
         softAssert.assertAll();
     }
-    @Test(priority = 2,description =  "Verify sign in with invalid email shows appropriate error message")
+
+    @Test(priority = 2, description = "Verify sign in with invalid email shows appropriate error message")
     public void testSignInWithInvalidEmail() {
         //reinitialize  softAssert for this test to avoid interference from other tests
         softAssert = new SoftAssert();
@@ -33,10 +35,11 @@ public class Scenario1Tests extends BaseTest {
         SignInPage signInPage = new SignInPage(driver);
         signInPage.enterEmail(invalidEmail);
         signInPage.clickContinueButton();
-        softAssert.assertEquals(signInPage.getInvalidEmailAlertMessage().trim() , "Invalid email address");
+        softAssert.assertEquals(signInPage.getInvalidEmailAlertMessage().trim(), "Invalid email address");
         softAssert.assertAll();
     }
-    @Test(priority = 3,description =  "Verify sign in with empty email")
+
+    @Test(priority = 3, description = "Verify sign in with empty email")
     public void testSignInWithEmptyEmail() {
         //reinitialize  softAssert for this test to avoid interference from other tests
         softAssert = new SoftAssert();
@@ -49,10 +52,9 @@ public class Scenario1Tests extends BaseTest {
         SignInPage signInPage = new SignInPage(driver);
         signInPage.enterEmail("");
         signInPage.clickContinueButton();
-        softAssert.assertEquals(signInPage.getEmptyEmailAlertMessage().trim() , "Enter your mobile number or email");
+        softAssert.assertEquals(signInPage.getEmptyEmailAlertMessage().trim(), "Enter your mobile number or email");
         softAssert.assertAll();
     }
-
 
 
 }

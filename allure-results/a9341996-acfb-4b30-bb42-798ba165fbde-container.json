@@ -1,0 +1,1 @@
+{"uuid":"a9341996-acfb-4b30-bb42-798ba165fbde","name":"BaseTest.setUpBrowser","children":["92a0271f-6b16-4e77-94e2-5d386cfdda69"],"description":"","befores":[{"name":"setUpBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1768761913236,"stop":1768761913877}],"afters":[],"start":1768761913236,"stop":1768761913877}

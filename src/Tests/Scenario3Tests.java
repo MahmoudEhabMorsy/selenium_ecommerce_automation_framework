@@ -1,8 +1,8 @@
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class Scenario3Tests extends BaseTest{
-    @Test(priority =1 ,description = "verify that user cannot see 'your orders' page without signing in")
+public class Scenario3Tests extends BaseTest {
+    @Test(priority = 1, description = "verify that user cannot see 'your orders' page without signing in")
     public void verifyUserCannotSeeYourOrdersWithoutSigningIn() {
         softAssert = new SoftAssert();
         HomePage homePage = new HomePage(driver);
@@ -10,10 +10,11 @@ public class Scenario3Tests extends BaseTest{
         homePage.hoverToAccountAndLists();
         homePage.clickYourOrders();
         //used current url instead of title because title is not always consistent and used regex to account for different possible formats of sign-in page url
-        softAssert.assertTrue(driver.getCurrentUrl().matches("(?i).*sign[-_]?in.*"),"User is unable to access 'Your Orders' page without signing in");
+        softAssert.assertTrue(driver.getCurrentUrl().matches("(?i).*sign[-_]?in.*"), "User is unable to access 'Your Orders' page without signing in");
         softAssert.assertAll();
     }
-    @Test(priority =2 ,description = "verify that user cannot see 'your addresses' page without signing in")
+
+    @Test(priority = 2, description = "verify that user cannot see 'your addresses' page without signing in")
     public void verifyUserCannotSeeYourAddressesWithoutSigningIn() {
         softAssert = new SoftAssert();
         HomePage homePage = new HomePage(driver);
@@ -24,7 +25,8 @@ public class Scenario3Tests extends BaseTest{
         softAssert.assertTrue(driver.getCurrentUrl().matches("(?i).*sign[-_]?in.*"), "User is unable to access 'Your Addresses' page without signing in");
         softAssert.assertAll();
     }
-    @Test(priority =3 ,description = "verify that user can see 'your lists' page without signing in")
+
+    @Test(priority = 3, description = "verify that user can see 'your lists' page without signing in")
     public void verifyUserCanSeeYourListsWithoutSigningIn() {
         softAssert = new SoftAssert();
         HomePage homePage = new HomePage(driver);

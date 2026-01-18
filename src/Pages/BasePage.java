@@ -10,6 +10,7 @@ import java.util.List;
 public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
         // Initialize WebDriverWait with a 20-second timeout
@@ -20,6 +21,7 @@ public class BasePage {
     protected WebElement getElement(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
     // Method to get list of elements and wait until they are visible
     protected List<WebElement> getElements(By locator) {
         return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));

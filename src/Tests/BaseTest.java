@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected SoftAssert softAssert ;
+    protected SoftAssert softAssert;
 
     @BeforeMethod
     public void setUpBrowser() {
@@ -15,6 +15,7 @@ public class BaseTest {
         // Initialize SoftAssert used soft assertion instead of hard assertion because it allows multiple assertions to be collected and reported together at the end of the test
         softAssert = new SoftAssert();
     }
+
     @AfterMethod
     public void tearDownBrowser() {
         if (driver != null) {
