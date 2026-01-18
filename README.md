@@ -145,6 +145,3 @@ Mahmoud Ehab Morsy
 
 This project is created for technical assessment and demonstration purposes.
 
-```
-
-```
