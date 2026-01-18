@@ -1,7 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class HomePage extends BasePage {
@@ -13,7 +12,6 @@ public class HomePage extends BasePage {
 
     String baseUrl = "https://www.amazon.eg/";
 
-    private WebDriverWait wait;
     public HomePage(WebDriver driver) {
         super(driver);
         driver.get(baseUrl);
