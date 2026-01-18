@@ -6,14 +6,14 @@ public class Scenario1Tests extends BaseTest {
     String invalidEmail = "invalid_email";
     @Test(priority = 1,description =  "Verify sign in with valid unregistered email shows appropriate message")
     public void testSignInWithValidUnregisteredEmail() {
-        // Creates a new SoftAssert instance for this test
+        //reinitialize  softAssert for this test to avoid interference from other tests
         softAssert = new SoftAssert();
         // Navigate to Home Page
         HomePage homePage = new HomePage(driver);
         // Hover over Account & Lists and click Sign In
         homePage.hoverToAccountAndLists();
         homePage.clickSignInButton();
-        // On Sign In Page enter a valid unregistered email and click Continue
+        // On Sign In Page enter a valid unregistered email and click Continue as per requirement
         SignInPage signInPage = new SignInPage(driver);
         signInPage.enterEmail(validUnregisteredEmail);
         signInPage.clickContinueButton();
@@ -22,7 +22,7 @@ public class Scenario1Tests extends BaseTest {
     }
     @Test(priority = 2,description =  "Verify sign in with invalid email shows appropriate error message")
     public void testSignInWithInvalidEmail() {
-        // Creates a new SoftAssert instance for this test
+        //reinitialize  softAssert for this test to avoid interference from other tests
         softAssert = new SoftAssert();
         // Navigate to Home Page
         HomePage homePage = new HomePage(driver);
@@ -38,7 +38,7 @@ public class Scenario1Tests extends BaseTest {
     }
     @Test(priority = 3,description =  "Verify sign in with empty email")
     public void testSignInWithEmptyEmail() {
-        // Creates a new SoftAssert instance for this test
+        //reinitialize  softAssert for this test to avoid interference from other tests
         softAssert = new SoftAssert();
         // Navigate to Home Page
         HomePage homePage = new HomePage(driver);

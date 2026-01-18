@@ -4,8 +4,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 
-import java.time.Duration;
-
 public class BaseTest {
     protected WebDriver driver;
     protected SoftAssert softAssert ;
@@ -14,7 +12,7 @@ public class BaseTest {
     public void setUpBrowser() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        // Initialize SoftAssert used soft assertion instead of hard assertion because it allows multiple assertions to be collected and reported together at the end of the test
         softAssert = new SoftAssert();
     }
     @AfterMethod
