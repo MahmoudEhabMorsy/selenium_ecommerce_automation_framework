@@ -130,8 +130,9 @@ allure serve allure-results
 ---
 
 ## Screenshots on Failure
+The framework captures screenshots automatically upon test case failure. This is implemented via a TestNG listener and a reusable screenshot utility class located in `utils/ScreenshotUtils.java`. 
 
-The framework captures screenshots automatically upon test case failure. This is implemented via a TestNG listener and a reusable screenshot utility class located in `utils/ScreenshotUtils.java`.
+All captured images are stored in a dedicated folder named `Failure screenshots` within the project root directory for easy review and debugging.
 
 ---
 
