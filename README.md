@@ -1,4 +1,3 @@
-```markdown
 # Asset Technical Task – UI Automation Framework
 
 ## Project Overview
