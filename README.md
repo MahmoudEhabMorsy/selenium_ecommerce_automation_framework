@@ -123,9 +123,10 @@ allure serve allure-results
 
 ## Test Scenarios
 
-* Scenario 1: Product search and cart validation.
-* Scenario 2: Deals page interaction and validation.
-* Scenario 3: User sign-in functionality.
+* Scenario 1: Verify that user cannot log in with valid but not registered email.
+* Scenario 2: Verify that Items are added to cart correctly.
+* Scenario 3: Verify that you cannot see “Your Orders” and “Your Addresses” pages if you are not
+logged in. But you can see “Your Lists” intro screen.
 
 ---
 
