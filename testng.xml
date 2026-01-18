@@ -9,5 +9,7 @@
             <class name="Scenario3Tests"/>
         </classes>
     </test>
-
+    <listeners>
+        <listener class-name="TestListener"/>
+    </listeners>
 </suite>

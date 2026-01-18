@@ -55,6 +55,22 @@ public class Scenario1Tests extends BaseTest {
         softAssert.assertEquals(signInPage.getEmptyEmailAlertMessage().trim(), "Enter your mobile number or email");
         softAssert.assertAll();
     }
-
+    @Test(priority = 4, description = "just a test to fail in order to check screenshot utility")
+    public void testToFailForScreenshot() {
+        //reinitialize  softAssert for this test to avoid interference from other tests
+        softAssert = new SoftAssert();
+        // Navigate to Home Page
+        HomePage homePage = new HomePage(driver);
+        // Hover over Account & Lists and click Sign In
+        homePage.hoverToAccountAndLists();
+        homePage.clickSignInButton();
+        // On Sign In Page enter an invalid email and click Continue
+        SignInPage signInPage = new SignInPage(driver);
+        signInPage.enterEmail("This_will_fail_and_take_screenshot");
+        signInPage.clickContinueButton();
+        // Intentionally failing assertion
+        softAssert.assertEquals(signInPage.getInvalidEmailAlertMessage().trim(), "This assertion is meant to fail");
+        softAssert.assertAll();
+    }
 
 }
