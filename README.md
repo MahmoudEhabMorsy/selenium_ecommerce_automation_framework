@@ -1,4 +1,4 @@
-# Asset Technical Task – UI Automation Framework
+# Selenium E-Commerce UI Automation Framework
 
 ## Project Overview
 This project is a UI automation testing framework built using Java, Selenium WebDriver, TestNG, and Maven. It follows the Page Object Model (POM) design pattern to ensure clean code structure, reusability, and maintainability.
