@@ -1,7 +1,7 @@
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class Scenario1Tests extends BaseTest {
+public class AuthenticationTests extends BaseTest {
     String validUnregisteredEmail = "unregistered_email_test@gmail.com";
     String invalidEmail = "invalid_email";
 

@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Asset Technical Task Suite" parallel="false">
+<suite name="SeleniumEcommerceAutomationFramework" parallel="false">
 
     <test name="Scenario Tests">
         <classes>
-            <class name="Scenario1Tests"/>
-            <class name="Scenario2Tests"/>
-            <class name="Scenario3Tests"/>
+            <class name="AuthenticationTests"/>
+            <class name="CartManagementTests"/>
+            <class name="AccountAccessTests"/>
         </classes>
     </test>
     <listeners>

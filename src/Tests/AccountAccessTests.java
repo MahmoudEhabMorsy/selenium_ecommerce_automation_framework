@@ -1,7 +1,7 @@
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class Scenario3Tests extends BaseTest {
+public class AccountAccessTests extends BaseTest {
     @Test(priority = 1, description = "verify that user cannot see 'your orders' page without signing in")
     public void verifyUserCannotSeeYourOrdersWithoutSigningIn() {
         softAssert = new SoftAssert();

@@ -4,7 +4,7 @@ import org.testng.asserts.SoftAssert;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Scenario2Tests extends BaseTest {
+public class CartManagementTests extends BaseTest {
     List<String> cartItemAttributes = new ArrayList<>();
     private String quantity = "2";
     private String productPrice;

@@ -29,9 +29,9 @@ src
 │
 ├── Tests
 │   ├── BaseTest.java
-│   ├── Scenario1Tests.java
-│   ├── Scenario2Tests.java
-│   ├── Scenario3Tests.java
+│   ├── AuthenticationTests.java
+│   ├── CartManagementTests.java
+│   ├── AccountAccessTests.java
 │   ├── TestListener.java
 │   └── utils
 │       └── ScreenshotUtils.java
