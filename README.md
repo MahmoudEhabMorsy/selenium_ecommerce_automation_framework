@@ -45,7 +45,7 @@ src
  └── main
       └── src
            ├── pages
-           ├── Tests
+           └── Tests
 ````
 
 ---
@@ -175,6 +175,3 @@ The target website structure may change over time, which can affect locator stab
 ## Author
 
 Mahmoud Ehab
-
-```
-```
